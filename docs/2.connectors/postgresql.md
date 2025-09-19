@@ -22,7 +22,7 @@ import postgresql from "db0/connectors/postgresql";
 
 const db = createDatabase(
   postgresql({
-    bindingName: "DB",
+    url: "postgresql://user:password@localhost:5432/mydb"
   }),
 );
 ```
